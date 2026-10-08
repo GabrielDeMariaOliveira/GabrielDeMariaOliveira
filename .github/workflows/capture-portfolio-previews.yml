@@ -1,0 +1,70 @@
+name: Capturas de sites para revisao
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/capture-portfolio-previews.yml
+
+permissions:
+  contents: read
+
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar navegador
+        run: |
+          npm install --no-save playwright@1.56.0
+          npx playwright install --with-deps chromium
+      - name: Capturar projetos
+        shell: bash
+        run: |
+          mkdir -p screenshots
+          node <<'NODE'
+          const { chromium } = require('playwright');
+          const sites = [
+            ['joyce-gandra', 'https://psijoycegandra.com.br/'],
+            ['ferreira-vasconcelos', 'https://ferreiraevasconcelos.com.br/']
+          ];
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            for (const [name, url] of sites) {
+              for (const [type, width, height] of [['desktop', 1440, 900], ['mobile', 390, 844]]) {
+                const page = await browser.newPage({
+                  viewport: { width, height },
+                  deviceScaleFactor: 1,
+                  isMobile: type === 'mobile',
+                  hasTouch: type === 'mobile'
+                });
+                try {
+                  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+                  await page.locator('body').waitFor({state:'visible',timeout:15000});
+                  await page.waitForTimeout(2500);
+                  await page.screenshot({path:`screenshots/${name}-${type}-primeira-tela.png`, fullPage:false, animations:'disabled'});
+                  await page.screenshot({path:`screenshots/${name}-${type}-pagina-completa.png`, fullPage:true, animations:'disabled'});
+                  console.log('Capturado:', name, type);
+                } catch (err) {
+                  console.error('Falha:', name, type, String(err));
+                  process.exitCode = 1;
+                } finally {
+                  await page.close();
+                }
+              }
+            }
+            await browser.close();
+          })().catch(err => {console.error(err);process.exitCode=1});
+          NODE
+      - name: Arquivar capturas para revisao
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots-de-portfolio-revisao
+          path: screenshots/*.png
+          if-no-files-found: warn
+          retention-days: 7
