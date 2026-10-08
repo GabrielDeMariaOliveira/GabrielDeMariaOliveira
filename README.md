@@ -22,7 +22,7 @@ Sou profissional de TI, com experiência em **desenvolvimento web, análise de s
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/GabrielDeMariaOliveira/portfolio-joyce-gandra"><img alt="Capa ilustrativa do portfólio Joyce Gandra" src="https://raw.githubusercontent.com/GabrielDeMariaOliveira/portfolio-joyce-gandra/main/assets/cover.svg" width="100%"></a>
+<a href="https://github.com/GabrielDeMariaOliveira/portfolio-joyce-gandra"><img alt="Captura real do site Joyce Gandra em desktop" src="https://raw.githubusercontent.com/GabrielDeMariaOliveira/portfolio-joyce-gandra/main/assets/screenshots/desktop-home.jpg" width="100%"></a>
 
 **Joyce Gandra · Psicologia**
 
@@ -33,7 +33,7 @@ Site institucional desenvolvido para a presença digital da profissional.
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/GabrielDeMariaOliveira/portfolio-ferreira-vasconcelos"><img alt="Capa ilustrativa do portfólio Ferreira e Vasconcelos" src="https://raw.githubusercontent.com/GabrielDeMariaOliveira/portfolio-ferreira-vasconcelos/main/assets/cover.svg" width="100%"></a>
+<a href="https://github.com/GabrielDeMariaOliveira/portfolio-ferreira-vasconcelos"><img alt="Captura real do site Ferreira e Vasconcelos em desktop" src="https://raw.githubusercontent.com/GabrielDeMariaOliveira/portfolio-ferreira-vasconcelos/main/assets/screenshots/desktop-home.jpg" width="100%"></a>
 
 **Ferreira &amp; Vasconcelos · Advocacia**
 
@@ -45,7 +45,7 @@ Site institucional para apresentação do escritório e de sua atuação profiss
 </tr>
 </table>
 
-<sub>Projetos realizados na **SiteAq**. Responsável pelo desenvolvimento técnico integral dos dois sites; meu sócio conduziu a frente comercial, o atendimento e participou da concepção inicial. Os códigos-fonte são privados. As capas acima são ilustrativas, não capturas dos sites.</sub>
+<sub>Projetos realizados na **SiteAq**. Responsável pelo desenvolvimento técnico integral dos dois sites; meu sócio conduziu a frente comercial, o atendimento e participou da concepção inicial. Os códigos-fonte são privados. As imagens acima são capturas reais das versões públicas dos sites.</sub>
 
 ### Tecnologias e conhecimentos
 
