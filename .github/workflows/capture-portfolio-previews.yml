@@ -11,11 +11,11 @@ permissions:
 
 jobs:
   screenshots:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - name: Preparar Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: '22'
       - name: Instalar navegador
@@ -62,7 +62,7 @@ jobs:
           NODE
       - name: Arquivar capturas para revisao
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: screenshots-de-portfolio-revisao
           path: screenshots/*.png
