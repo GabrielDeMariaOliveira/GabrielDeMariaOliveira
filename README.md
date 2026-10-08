@@ -21,13 +21,13 @@ Busco desenvolver minha carreira técnica e, ao mesmo tempo, contribuir com proj
 
 Desenvolvimento técnico integral de um site institucional para a profissional Joyce Gandra, realizado no contexto da SiteAq.
 
-**[Acessar site publicado](https://psijoycegandra.com.br/)**
+**[Ver documentação no GitHub](https://github.com/GabrielDeMariaOliveira/portfolio-joyce-gandra)** · [Visitar site publicado](https://psijoycegandra.com.br/)
 
 ### ⚖️ Ferreira & Vasconcelos — Site institucional para advocacia
 
 Desenvolvimento técnico integral do site institucional Ferreira & Vasconcelos, realizado no contexto da SiteAq.
 
-**[Acessar site publicado](https://ferreiraevasconcelos.com.br/)**
+**[Ver documentação no GitHub](https://github.com/GabrielDeMariaOliveira/portfolio-ferreira-vasconcelos)** · [Visitar site publicado](https://ferreiraevasconcelos.com.br/)
 
 > **Créditos dos projetos:** fui responsável pelo desenvolvimento técnico integral dos dois sites. Meu sócio participou das atividades comerciais, do atendimento aos clientes e da estruturação inicial das ideias. Os projetos foram realizados pela **SiteAq**.
 >
@@ -66,4 +66,4 @@ Na SiteAq, seguimos um princípio que também orienta meu trabalho técnico: **�
 
 ---
 
-*Portfólio profissional em evolução. Os próximos repositórios apresentarão a documentação dos projetos sem expor informações confidenciais.*
+*Portfólio profissional com documentação pública dos projetos. Os códigos-fonte dos clientes permanecem confidenciais.*
