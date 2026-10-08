@@ -29,12 +29,12 @@ jobs:
           node <<'NODE'
           const { chromium } = require('playwright');
           const sites = [
-            ['joyce-gandra', 'https://psijoycegandra.com.br/'],
-            ['ferreira-vasconcelos', 'https://ferreiraevasconcelos.com.br/']
+            ['joyce-gandra', 'https://psijoycegandra.com.br/', /somente essenciais/i],
+            ['ferreira-vasconcelos', 'https://ferreiraevasconcelos.com.br/', /rejeitar não essenciais/i]
           ];
           (async () => {
             const browser = await chromium.launch({ headless: true });
-            for (const [name, url] of sites) {
+            for (const [name, url, consentButton] of sites) {
               for (const [type, width, height] of [['desktop', 1440, 900], ['mobile', 390, 844]]) {
                 const page = await browser.newPage({
                   viewport: { width, height },
@@ -45,7 +45,15 @@ jobs:
                 try {
                   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
                   await page.locator('body').waitFor({state:'visible',timeout:15000});
-                  await page.waitForTimeout(2500);
+                  await page.waitForTimeout(1500);
+                  const dismiss = page.getByRole('button', {name: consentButton}).first();
+                  if (await dismiss.count()) {
+                    await dismiss.click({timeout:7000});
+                    console.log('Preferências essenciais selecionadas:',name,type);
+                  } else {
+                    console.warn('Botão de cookies não encontrado:',name,type);
+                  }
+                  await page.waitForTimeout(1500);
                   await page.screenshot({path:`screenshots/${name}-${type}-primeira-tela.png`, fullPage:false, animations:'disabled'});
                   await page.screenshot({path:`screenshots/${name}-${type}-pagina-completa.png`, fullPage:true, animations:'disabled'});
                   console.log('Capturado:', name, type);
