@@ -2,7 +2,11 @@
 
 **`Desenvolvedor Web | Analista de Sistemas`**
 
-Sou profissional de Tecnologia da Informação, com experiência em **desenvolvimento web, análise de sistemas e suporte técnico especializado**. Na **SiteAq**, sou responsável pelo desenvolvimento técnico de projetos digitais — da implementação aos ajustes de entrega.
+**Desenvolvimento web com foco em soluções funcionais.**
+
+Sou profissional de Tecnologia da Informação, com experiência em **desenvolvimento web, análise de sistemas e suporte técnico especializado**. Minha trajetória inclui diagnóstico de falhas, parametrizações e integrações de sistemas corporativos.
+
+Na **SiteAq**, sou responsável pelo **desenvolvimento técnico integral** dos projetos digitais, da implementação aos ajustes de entrega. Procuro compreender o problema antes de definir a solução e manter a experiência de uso no centro das decisões.
 
 <p align="left">
   <a href="https://www.linkedin.com/in/gabriel-de-maria-oliveira/">
@@ -64,12 +68,26 @@ Sou profissional de Tecnologia da Informação, com experiência em **desenvolvi
   &nbsp;
   <img alt="PostgreSQL" title="PostgreSQL" width="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
   &nbsp;
+  <img alt="C" title="C" width="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+  &nbsp;
+  <img alt="C++" title="C++" width="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+  &nbsp;
   <img alt="Git" title="Git" width="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
 </p>
 
-**Também atuo com:** diagnóstico técnico, análise de requisitos, integrações e suporte a sistemas.
+**Além do desenvolvimento:** análise de requisitos · diagnóstico técnico · parametrização de sistemas · integrações · suporte especializado.
 
 <sub>As tecnologias listadas representam conhecimentos profissionais; não são uma declaração da stack utilizada em todos os projetos apresentados.</sub>
+
+---
+
+### 🧭 Minha forma de trabalhar
+
+**Entender → Planejar → Desenvolver → Testar → Documentar**
+
+A tecnologia precisa fazer sentido para o problema. Na **SiteAq**, seguimos o princípio **“Entendemos antes de construir.”**
+
+**🌍 Idiomas:** Português (nativo) · Espanhol (intermediário) · Inglês (básico)
 
 ---
 
@@ -85,6 +103,6 @@ Sou profissional de Tecnologia da Informação, com experiência em **desenvolvi
 
 ---
 
-**SiteAq:** “Entendemos antes de construir.”
+**Tem um projeto ou oportunidade na área de tecnologia?**
 
-[LinkedIn](https://www.linkedin.com/in/gabriel-de-maria-oliveira/) · [E-mail](mailto:gabriel.demaria@hotmail.com)
+[**Conecte-se comigo no LinkedIn**](https://www.linkedin.com/in/gabriel-de-maria-oliveira/) · [**Entre em contato por e-mail**](mailto:gabriel.demaria@hotmail.com)
